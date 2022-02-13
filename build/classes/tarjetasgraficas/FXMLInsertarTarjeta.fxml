@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+
+
+
+<GridPane fx:controller="tarjetasgraficas.FXMLInsertarTarjetaController"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+
+    <padding>
+        <Insets top="25" right="25" bottom="10" left="25"/>
+    </padding>
+    
+    <Text text="Número de la tarjeta:"  GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="numTarjeta" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    
+    <Text text="FECHA:"  GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    
+    <Text text="Año:"  GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <TextField fx:id="anio" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    
+    <Text text="Mes:"  GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <TextField fx:id="mes" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    
+    <Text text="Día:"  GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <TextField fx:id="dia" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+    
+    <Text text="Saldo:"  GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+    <TextField fx:id="saldo" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+    
+    <Text text="Tipo:"  GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+    <TextField fx:id="tipo" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+    
+    
+    <Button text="Enviar" GridPane.columnIndex="1" GridPane.rowIndex="8" onAction="#handleButtonAction"/>
+    <Label fx:id="etiquetaObjetivo"  GridPane.columnIndex="0" GridPane.rowIndex="8" GridPane.columnSpan="2"/> 
+
+</GridPane>
+
+
